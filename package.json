@@ -11,7 +11,7 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -40,8 +40,7 @@
     "vitest": "^1.4.0"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md}": [
-      "prettier --write",
+    "*.{ts,tsx}": [
       "eslint --fix"
     ]
   }
